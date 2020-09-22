@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  mail:
+    container_name: mail
+    image: mailhog/mailhog
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - default
+
+networks:
+  default:
+    external: 
+      name: local_proxy
