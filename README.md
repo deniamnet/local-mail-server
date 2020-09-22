@@ -1,2 +1,2 @@
-# local-mail-server
+# Local Mail Server
 Local mail server with MailHog
